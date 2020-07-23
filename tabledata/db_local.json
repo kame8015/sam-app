@@ -1,0 +1,19 @@
+{
+	"TableName": "product_table",
+	"KeySchema": [
+		{
+			"AttributeName": "name",
+			"KeyType": "HASH"
+		}
+	],
+	"AttributeDefinitions": [
+		{
+			"AttributeName": "name",
+			"AttributeType": "S"
+		}
+	],
+	"ProvisionedThroughput": {
+		"ReadCapacityUnits": 2,
+		"WriteCapacityUnits": 2
+	}
+}
